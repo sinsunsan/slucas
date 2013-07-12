@@ -1,0 +1,6 @@
+name = slucas
+description = Sébastien Lucas common utilities
+package = slucas
+core = 7.x
+
+files[] = slucas.module

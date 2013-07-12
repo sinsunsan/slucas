@@ -1,0 +1,20 @@
+<?php 
+
+
+/**
+ * Helper function to dump an object and die
+ *
+ * @param mixed $v
+ */
+function d($v) {
+  if (is_array($v)) {
+    die('<pre>' . print_r($v, 1) . '</pre>');
+  }
+  elseif (is_object($v)) {
+    var_dump($v);
+    die();
+  }
+  else {
+    die('<pre>' . $v . '</pre>');
+  }
+}
